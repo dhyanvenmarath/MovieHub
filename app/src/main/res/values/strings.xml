@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MovieHub</string>
+    <string name="movie_search_hint">Type movies here</string>
+</resources>

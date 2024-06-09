@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/movie_image_IV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="0.6691"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:src="@drawable/poster1"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/movie_name_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/movie_name_text_size"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginTop="@dimen/movie_name_text_top_margin"
+        android:gravity="start"
+        android:fontFamily="@font/titillium_web_light"
+        app:layout_constraintStart_toStartOf="@+id/movie_image_IV"
+        app:layout_constraintTop_toBottomOf="@+id/movie_image_IV"
+        tools:text="The Birds"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

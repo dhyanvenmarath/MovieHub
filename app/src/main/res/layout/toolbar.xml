@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/nav_bar"
+    android:minHeight="?attr/actionBarSize">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/back_arrow_IV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/title_margin_start"
+        android:fontFamily="@font/titillium_web_regular"
+        android:textColor="@color/white"
+        android:textSize="@dimen/movie_title_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back_arrow_IV"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Romantic Comedy"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/search_ET"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/titillium_web_regular"
+        android:hint="@string/movie_search_hint"
+        android:textColor="@color/white"
+        android:textColorHint="@color/movie_search_hint_color"
+        android:textSize="@dimen/movie_title_text_size"
+        android:visibility="gone"
+        app:layout_constraintBaseline_toBottomOf="@id/search_button_IV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/search_button_IV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_search" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
