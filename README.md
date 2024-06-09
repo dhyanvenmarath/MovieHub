@@ -1,4 +1,4 @@
-Movie List App
+###Movie List App
 
 A Movie List App built with Android's modern development tools including Jetpack components, MVVM architecture, Hilt for dependency injection, and the Paging library for handling large data sets.
 
